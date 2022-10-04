@@ -1,0 +1,48 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'authentication/stylea.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ">
+    <div class="wrapper">
+        <nav>
+            {% for message in messages %}
+            <div class="alertalert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+            </div>
+            {% endfor %}
+
+            <div class="left_side">
+                <h1 class="ed1">ingressive<br>for good</h1>
+                <span id="span">+</span>
+                <h1 class="ed2">Zuri <br>
+                    <pre class="tee">Training</pre>
+                </h1>
+            </div>
+            <br>
+
+            <button><a href="signup">REGISTER</a></button>
+            <button><a href="signin">LOGIN</a></button>
+
+        <center>
+            <section>
+                <div>
+                    <h1>welcome To Clever Akanimoh</h1>
+                    <br>
+                    <p>Remember to Login</p>
+                </div>
+                 <br>
+        </center>
+    </div>
+</body>
+
+</html>

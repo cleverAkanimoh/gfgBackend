@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: #eee;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color: #333;
+}
+nav ul{
+    color: #e7e4e4;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+nav ul li{
+    
+    display: inline-block;
+    padding: 5px 7px;
+    /* background-color: red; */
+    /* margin-right: 15px; */
+}
+nav ul li a{
+   
+    text-decoration: none;
+    color: #f5f5f7;
+    position: relative;
+    height: 44px
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    background-color: white;
+    width: 900px;
+    margin: 15px auto;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    height: 85%;
+    border: 1px solid #cfcfcf;
+    
+}
+.header{
+    padding: 80px 50px;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    border-bottom: 1px solid #cfcfcf;
+}
+#h{
+    font-size: 45px;
+    padding: 10px 0;
+
+}
+#tributes{
+    color: rgb(73, 70, 70);
+    border-bottom: 1px solid #cfcfcf;
+    width: 700px;
+    margin: 0 auto;
+    
+}
+.message{
+    margin-top: 30px;
+    font-size: 14px;
+    color: black;
+    padding: 10px 0;
+}
+#message{
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px 30px; 
+}
+.text{
+    font-size: 13px;
+    text-align: justify;
+}
+.author{
+    font-size: 12px;
+    color: rgb(126, 119, 119);
+}
+footer{
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px 10px;
+    text-align: center;
+}
+footer h1{
+    font-size: 35px;
+    padding-top: 10px;
+    margin: 10px 0;
+}
+i{
+    font-size: 19px;
+    padding: 0 10px;
+}

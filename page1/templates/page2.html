@@ -1,0 +1,193 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'page1/style2.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Jobs</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    </head>
+
+<body>
+    <main>
+        <div class="top">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fab fa-apple"></i></a></li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'page1' %}">story</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href='delete'>Delete</a></li>
+                    <li><a href="{% url 'qrcode' %}">QR Code</a></li>
+                    <li><a href="signout">Signout</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </main>
+    <center>
+        {% if user.is_authenticated %}
+        <h3>welcome {{fname}} {{lname}}</h3>
+
+        {% else %}
+
+        <button><a href="signup">REGISTER</a></button>
+        <button><a href="signin">LOGIN</a></button>
+        {% endif %}
+    </center>
+    <section class="body">
+        <div class="header">
+            <h1 id="h">Remembering Steve</h1>
+            <p>Over a million people from all over the world have shared their memories, thoughts, and feelings about
+                Steve. One thing they all have in common – from personal friends to colleagues to owners of Apple
+                products – is how they’ve been touched by his passion and creativity. You can view some of these
+                messages below.</p><br>
+            <p> And share your own at <a href="remeberingsteve@apple.com">remeberingsteve@apple.com</a></p>
+        </div>
+        <div id="tributes">
+            <article id="message">
+                <h1 class="message">RIP Steve</h1>
+                <p class="text">He was a genius for all humanity. His passing away is a great loss for the civilization. Rest in peace Steve.</p>
+                <p class="author"> Alp from Istanbul</p>
+            </article>
+            <article id="message">
+                <h1 class="message">Think Different</h1>
+                        <p class="text">Tonight, our family for your family & loved ones. Thanks for your live Steve.</p>
+                        <p class="author">Gavin</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Remembering Steve</h1>
+                        <p class="text">Steve, you changed my world for a better and that’s more than I can say for any other stranger.</p>
+                        <p class="author">Sam</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Many Thanks</h1>
+                        <p class="text">Steve, you have inspired me to live and die creatively and with passion. We may not have even known each other, but your time here has impacted mine. May you rest in Peace</p>
+                        <p class="author">John from Houston</p>
+            </article>
+
+            <article id="message">
+                <h1 class="message">So sad</h1>
+                <p class="text">As I heard this sad news via my iPhone I am emailing condolences from my MacBook Pro. Steve has left a fingerprint on culture that cannot be rivaled and will be long lasting. My deepest sympathy to his family and friends.</p>
+                <p class="author">Tracy</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">RIP</h1>
+                <p>So sorry to hear, so young, RIP. Long live the apple.</p>
+                <p class="author">Magik</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Goodbye Steve</h1>
+                <p class="text">I will dearly miss Steve Jobs he inspired me to keep getting iPhone I have loved them ever since the first one. Steve Jobs was a great man and an awesome CEO for APPLE. He has inspired me to one day go for and work with the apple when I get old but my dream is to own Apple and follow by Steve Jobs way and make Apple greater than before it was. But I will dearly miss Steve Jobs he’s a great man and I will never forget him.</p>
+                <p class="author"> Mushy</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Steve Jobs</h1>
+                <p class="text">What impact has Steve Jobs had on my life? Every short story I’ve written as an adult (and certainlyevery one that has been published), almost every email I’ve ever written on machines created by Apple. I interacted online using an Apple machine long before I ever encountered a PC. Steve Jobs helped to realize the Star Trek future I dreamed of as a kid. And though his vision, I have been able to realize my own. You’ll be missed, Mr. Jobs. Thanks for all your amazing work.</p>
+                <p class="author">Janna from Seattle, WA</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">He’s gone…</h1>
+                <p class="text">A part of my heart has cracked. I didn’t know him personally but I feel like I knew him. I will forever remember him. I’m still saddened because he was taken too soon. I can only imagine his struggles. Heaven has certainly gained an angel.</p>
+                <p class="author">Anonymous</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">I will always remember Steve!</h1>
+                <p class="text">Dear Steve’s family, dear Apple company I can’t find words how to describe my feelings… For me Apple
+                    means a lot – I got a good job using Apple products, I have found a new lifestyle thanks to Apple.
+                    And, of I’ve been always admiring your products. And for me everything in Apple is connected with
+                    Steve. I do hope he’ll be remembered around the world as a genius.</p>
+                <p class="author">Eugene</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Thanks</h1>
+                <p class="text">STEVE THANKS FOR EVERYTHING!!!!!!!!!!!!!!!!!!!!!!!!</p>
+                <p class="author">Brandon</p>
+            </article>
+            <article id="message">
+                <h1 class="message">Deepest Condolences</h1>
+                <p class="text">Dear Apple Family, we are all deeply saddened by Steve’s passing. He will be sorely missed. But we know that his flame burns on, at the core of Apple.</p>
+                <p class="author"> Kapil</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">To those close to Steve</h1>
+                <p class="text">My thoughts and prayers are with you all tonight. The company Steve started has touched the lives of  many in this world and he will be missed. I know he will live on in spirit, though the lives of all who knew him well. As a sign of respect for Steve, I will be turning my iPhone, iPod, and iPad off for one hour. May Steve rest in peace.</p>                   
+                <p class="author">Zachary</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">DEATH OF A GENIUS</h1>
+                <p class="text">REST IN PEACE</p>
+                <p class="author">Frank</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Steve Jobs</h1>
+                <p class="text">My deepest condolences goes to Steve’s family and loved ones, I have been an apple user for a short period of time, but I love the products that Steve pioneered, and the service that the company he built provide when using them, he succeeded in building a company that cares about making a product that has made all of our lives much easier and richer.</p>
+                <p class="author">Edwin</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">YOU’LL BE MISSED BUT ALWAYS REMEMBERED</h1>
+                <p class="text">Thanks for all you have given this world! My condolences to the entire Jobs family and also I share this sentiment for his colleagues at Apple! RIP STEVE!</p>
+                <p class="author">Anonymous</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">RIP</h1>
+                <p class="text">I’m so saddened to hear the news of Steve’s passing. His revolutionary designs and innovative
+                    products have changed the world for the better. Without the iPad, I would not be able to Facetime my
+                    parents in the UK on a daily basis. So simple are his products that even my parents in their 60s
+                    have learned to use them. You will always be remembered and never replace. May you rest in peace.</p>
+                <p class="author">Vicki</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Condolence</h1>
+                <p class="text">Dear Apple I was deeply saddened to hear about the death of Steve Jobs, the great leader and creator
+                    in the world I believe he would go to a more beautiful place and he would like to see a stronger
+                    Apple. We will remember him forever.</p>
+                <p class="author">Yibo from PR China</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Thank You</h1>
+                <p class="text">Never got a chance to thank you for everything you have done for all of us. Your thoughts are an inspiration and your legacy shall be followed. Now is time for you to rest in peace.</p>
+                <p class="author">Paulo</p>
+
+            </article>
+            <article id="message">
+                <h1 class="message">Steve Jobs</h1>
+                <p class="text">Steve was a true inspiration to all of us that have been in IT and a genius that will be remembered for a long time. He was a very rare and brilliant man.</p>
+                <p class="author"> Kirk</p>
+
+            </article>
+        </div>
+        <footer>
+            <h1>Steve Jobs</h1>
+            <h3>1955-2011</h3>
+            <p>Steve touched all of our lives in so many ways.</p>
+            <p>Thank you for sharing your thoughts and remembrances</p>
+        </footer>
+    </section>
+   </body>
+
+</html>

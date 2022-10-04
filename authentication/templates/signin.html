@@ -1,0 +1,59 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'authentication/stylea.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+
+<body style="font-family:Georgia, 'Times New Roman', Times, serif ">
+    <section><center>
+         <div class="links">
+            {% for message in messages %}
+            <div class="alertalert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+            </div>
+            {% endfor %}
+        </center>
+
+            <h4 class="right_side"><a href="{% url 'signup' %}">REGISTER</a>
+                 <a href="{% url 'signin' %}">LOGIN</a>
+        </div>
+    <center>
+    <section>
+        <div>
+            <b><h1>welcome back!</h1></b>
+            <h3>Login here</h3>
+        </div>
+            <form action="signin" method="post">
+            {% csrf_token %}
+                <label for="">Username </label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                            
+                <br>
+                <label for="">Password </label>
+                <input type="password" id="pass1" name="pass1" pattern="[A-Za-z0-9]*" required>
+                <br>
+
+                <br>
+                <input type="checkbox" class="checkk"><label for="remember_me" class="inline">Remember me</label>
+                <br>
+
+                <br>
+                <label for=""><a href="{% url 'password_reset' %}">Forgot your password?</a></label>
+                <br>
+
+                <br>
+                <button type="submit">Login</button>
+            </form>
+    </section>
+    </center>
+    </body>     
+</html>
